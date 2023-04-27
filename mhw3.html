@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tornei DMJ</title>
+    <link rel="stylesheet" href="mhw3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="script.js" defer="true"></script>
+    <link rel="stylesheet" type="text/css" href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.18.0/maps/maps.css"/>
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.18.0/maps/maps-web.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Codice dell'Header-->
+    <header id="up">
+
+        <div id="overlay"></div>
+
+        <!-- Codice del menu compatto per i dispositivi con width < 950px-->
+        <div id="menu">
+            <div class="linea"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
+        </div>
+
+        <!-- Codice del menu per i dispositivi con width >= 950px-->
+        <nav id="navbar">
+            <a class="elemnav" href="mhw1.html">Home</a>
+            <a class="elemnav" href="">Gallery</a>
+            <a class="elemnav" href="">Contacts</a>
+            <a class="elemnav" href="">News</a>
+        </nav>
+
+        <h1 id="titolo">TORNEI DMJ</h1>
+
+    </header>
+    
+    
+    <!-- Codice della Section-->
+
+    <div id="cit">
+        <div id="citazione">"I can accept failure, everyone fails at something. But I can't accept not trying."</div>
+        <div id="citato">Lebron James</div></div>
+
+    <section id="content">
+
+        <div class="torneo">
+            <h3 class="titolo2"> TORNEO ALFA</h3>
+            <img src="img/alpha.png" class="imgtorneo" alt="logo1">
+            <p class="descrizione">Il torneo ALFA è un torneo composto da 4 squadre e avviene
+                in un'unica serata.<br />Vi saranno 2 SEMIFINALI e 2 FINALI: una per il terzo e
+                quarto posto ed una per la medaglia d'oro.<br />La premiazione avverrà alla fine del
+                torneo e comporterà la distribuzione di medaglie e trofei.<br />I trofei avranno categorie
+                stravaganti.
+            </p>
+            <h3 class="obiettivo">OBIETTIVO TORNEO: Divertimento!</h3>
+            
+        </div> 
+
+        <div class="torneo">
+            <h3 class="titolo2">TORNEO BETA</h3>
+            <img src="img/beta.png" class="imgtorneo" alt="logo1">
+            <p class="descrizione">
+                Il torneo BETA è un torneo composto da 6 squadre. <br />Le prime 4 classificate si qualificheranno
+                alle
+                semifinali che si disputeranno nella formula <em>primo vs terzo e secondo vs quarto</em>. Il primo
+                premio sarà
+                una
+                somma in denaro. La premiazione con medaglie di oro, argento e bronzo ed eventuali trofei, avverrà
+                il
+                giorno della finalissima.
+            </p>
+            <h3 class="obiettivo">OBIETTIVO TORNEO: Trionfo!</h3>
+            
+        </div>
+
+      
+        <div class="torneo">
+            <h3 class="titolo2"> TORNEO GAMMA</h3>
+            <img src="img/gamma.png" class="imgtorneo" alt="logo1">
+            <p class="descrizione">
+                Il torneo GAMMA è un torneo composto da 8 squadre divise in
+                due gironi. Ogni incontro avrà andata e ritorno, garantendo così un minimo di 6 partite per squadra.
+                Le
+                prime due
+                di ogni girone si qualificheranno alle semifinali, le quali verranno seguite dalle due finali.
+                Il primo premio sarà una somma in denaro pari a 5 volte la quota di iscrizione per squadra.
+            </p>
+            <h3 class="obiettivo">OBIETTIVO TORNEO: Gloria!</h3>
+            
+        </div>
+           
+        <div class="torneo">
+            <h3 class="titolo2">TORNEO DELTA</h3>
+            <img src="img/delta.png" class="imgtorneo" alt="logo1">
+            <p class="descrizione">
+                Il torneo DELTA è un torneo composto da 20 squadre. La formula è la stessa della Serie A: girone
+                d'andata, girone di ritorno,
+                vince il primo classificato. Il primo premio è una grossa somma in denaro, senza dimenticare
+                medaglie
+                d'oro e la coppa del torneo.<br />
+                La seconda e la terza qualificata potranno entrare gratuitamente all'edizione successiva dello
+                stesso
+                torneo.
+            </p>
+            <h3 class="obiettivo">OBIETTIVO TORNEO: Vittoria!</h3>
+            
+        </div>
+
+      
+        <div class="torneo">
+            <h3 class="titolo2">TORNEO OMEGA</h3>
+            <img src="img/omega.png" class="imgtorneo" alt="logo1">
+            <p class="descrizione">
+                Il torneo OMEGA è un torneo formato da un numero indefinito di squadre. Si inzia la mattina e si
+                finisce la sera. La squadra che vince resta.
+                La squadra che avrà vinto più partite vincerà il torneo.
+            </p>
+            <h3 class="obiettivo">BIETTIVO TORNEO: Supremazia!</h3>
+            
+        </div>
+
+       
+
+    </section>
+
+    <!-- Codice del Footer-->
+
+    <!-- Nel footer troviamo diverse informazioni, tra cui 3 indirizzi. Una volta cliccato su un indirizzo comparirà una mappa in modalview. Per uscire dall'interfaccia della mappa basta cliccare
+    un qualunque punto esterno ad essa. Per trovare le coordinate dei 3 indirizzi, utilizzo un'API. -->
+    <div id="modalview" class="hidden">
+        <div id="map"></div>
+    </div>
+
+    
+
+    <footer id="down">
+        <p id="sito">TORNEI DMJ</p>
+        <h4 id="nome">Alessandro Nicosia 1000014654</h4>
+
+        <!-- Questo è il codice per compattare il footer nei dispositivi con width < 950px, ovvero rendo più compatto il footer usando lo stesso metodo della navbar-->
+        <div id="menufooter">
+
+            <div class="footerelem">
+                <div class="trattini">
+                    <div class="linea2"></div>
+                    <div class="linea2"></div>
+                    <div class="linea2"></div>
+                </div>
+                <div class="titlista">Contatti</div>
+            </div>
+            <div class="footerelem">
+                <div class="trattini">
+                    <div class="linea2"></div>
+                    <div class="linea2"></div>
+                    <div class="linea2"></div>
+                </div>
+                <div class="titlista">Dove siamo</div>
+            </div>
+            <div class="footerelem">
+                <div class="trattini">
+                    <div class="linea2"></div>
+                    <div class="linea2"></div>
+                    <div class="linea2"></div>
+                </div>
+                <div class="titlista">Servizi</div>
+            </div>
+            <div class="footerelem">
+                <div class="trattini">
+                    <div class="linea2"></div>
+                    <div class="linea2"></div>
+                    <div class="linea2"></div>
+                </div>
+                <div class="titlista">Terms & Policies</div>
+            </div>
+
+        </div>
+
+        <!-- Codice del footer per dispositivi con width >= 950px -->
+
+        
+        <div id="allinfo">
+            <div class="info">
+                <ul class="lista" type="none">
+                    <li class="elemlista" id="titlista">Contatti</li>
+                    <li class="elemlista">Telefono: 30000001</li>
+                    <li class="elemlista">Email: torneodmj@gmail.com</li>
+                    <li class="elemlista">Instagram: @torneo_dmj</li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul class="lista" type="none">
+                    <li class="elemlista" id="titlista">Dove siamo</li>
+                    <li class="elemlista">Sede: <div id="sede">Via Aldo Rossi 8 20149 Milano</div></li>
+                    <li class="elemlista">Segreteria: <div id="segre">Via Aldo Rossi 8 20149 Milano</div></li>
+                    <li class="elemlista">Campo: <div id="campo">Piazzale Angelo Moratti 20151 Milano</div></li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul class="lista" type="none">
+                    <li class="elemlista" id="titlista">Servizi</li>
+                    <li class="elemlista">Fotografo: Cristiano Ronaldo</li>
+                    <li class="elemlista">Arbitri: Associazione Italiana Arbitri</li>
+                    <li class="elemlista">Giornalisti: Gazzetta dello Sport</li>
+                </ul>
+            </div>
+
+            <div class="info">
+                <ul class="lista" type="none">
+                    <li class="elemlista" id="titlista">Terms & Policies</li>
+                    <li class="elemlista"><a class="elemterms" href="">Informazioni Legali</a></li>
+                    <li class="elemlista"><a class="elemterms" href="">Privacy policy</a></li>
+                    <li class="elemlista"><a class="elemterms" href="">Cookies policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
